@@ -45,9 +45,19 @@ form {
   font-weight: bold;
 }
 input,
-textarea,
-select,
+textarea
 button {
   padding: 10px;
   margin: 5px 0;
 }
+.phone {
+  height: 45px;
+  width: 40px;
+}
+.phone-number {
+  display: flex;
+}
+#number {
+  width: 92%;
+}
+
