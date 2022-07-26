@@ -16,38 +16,46 @@
     <form action="" class="form">
       <h3 class="sign-up">Sign Up</h3>
       <div class="form-div">
-        <label for="firstname" class="form-label">First Name:</label>
+        <label for="firstname" class="form-label">Firstname</label>
         <input type="text" id="firstname" />
       </div>
       <div class="form-div">
-        <label for="lastname" class="form-label">Last Name:</label>
+        <label for="lastname" class="form-label">Lastname</label>
         <input type="text" id="lastname" />
       </div>
       <div class="form-div">
-        <label for="number" class="form-label">Phone Number:</label>
+        <label for="number" class="form-label">Phone Number</label>
         <div class="phone-number">
-          <input type="tel" id="number" />
-
-          <img src="phone.jpg" alt="phone" class="phone" />
+          <div class="phone-input">
+            <input type="tel" id="number" required />
+          </div>
+          <div class="carrier-logo">
+              <div>
+                <img src="logos/glo.jpg" width="20" id="logo">
+              </div>
+          </div>
         </div>
       </div>
 
 
 
       <div class="form-div">
-        <label for="username" class="form-label">User Name:</label>
+        <label for="username" class="form-label">Username</label>
         <input type="text" id="username" />
       </div>
       <div class="form-div">
-        <label for="password" class="form-label">Password:</label>
+        <label for="password" class="form-label">Password</label>
         <input type="password" id="password" />
       </div>
       <div class="form-div">
-        <label for="conpassword" class="form-label">Confirm Password:</label>
+        <label for="conpassword" class="form-label">Confirm Password</label>
         <input type="password" id="conpassword" />
       </div>
       <button type="submit" class="submit">Register</button>
     </form>
+    <div>
+        <p class="footnote">Built with 💖 by <b>Circle 145</b>. Enjoy the rest of the day!</p>
+    </div>
   </div>
 
   <!-- // ============= EEND DO NOT EDIT ============== // -->
