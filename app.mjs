@@ -11,7 +11,8 @@ function startApp() {
     /^(\+234802|\+234808|\+234812|\+234701|\+234708|\+234902|\+234907|\+234901|\+234912|0802|0808|0812|0701|0708|0902|0907|0901|0912)\d{7}$/;
 
   input_number.addEventListener("keyup", () => {
-    
+    input_number.value = input_number.value.replace(/[^0-9\+]/g, "");
+
     if (mtn_prefix.test(input_number.value)) {
       document.querySelector(".phone-logo").src = "logos/mtn.png";
       console.log(input_number);
@@ -25,6 +26,7 @@ function startApp() {
       document.querySelector(".phone-logo").src = "logos/9mobile.png";
       console.log(input_number);
     } else {
+      return;
     }
   });
 }
