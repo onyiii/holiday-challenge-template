@@ -1,6 +1,6 @@
 function startApp() {
   let input_number = document.getElementById("number");
-  let numbersOnly = /[^0-9+]/
+
   let mtn_prefix =
     /^(\+234803|\+234806|\+234703|\+234706|\+234810|\+234813|\+234814|\+234816|\+234903|\+234906|0803|0806|0703|0706|0810|0813|0814|0816|0903|0906)\d{7}$/;
   let glo_prefix =
@@ -11,10 +11,7 @@ function startApp() {
     /^(\+234802|\+234808|\+234812|\+234701|\+234708|\+234902|\+234907|\+234901|\+234912|0802|0808|0812|0701|0708|0902|0907|0901|0912)\d{7}$/;
 
   input_number.addEventListener("keyup", () => {
-    if (numbersOnly.test(input_number.value)) {
-      input_number.value.replace(e, "");
-    }
-    // input.value = input_number.value.replace(regex, "");
+    
     if (mtn_prefix.test(input_number.value)) {
       document.querySelector(".phone-logo").src = "logos/mtn.png";
       console.log(input_number);
